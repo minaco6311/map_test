@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#f0f0f0"/>
+  
+  <!-- 道路 -->
+  <path d="M50 150 H350 M200 50 V250" stroke="gray" stroke-width="20"/>
+  
+  <!-- 建物 -->
+  <rect x="60" y="60" width="50" height="50" fill="lightblue"/>
+  <rect x="290" y="190" width="50" height="50" fill="lightgreen"/>
+  
+  <!-- 人物 -->
+  <circle id="person" cx="50" cy="150" r="10" fill="red">
+    <animate
+      attributeName="cx"
+      values="50;200;200;350"
+      keyTimes="0;0.4;0.6;1"
+      dur="5s"
+      repeatCount="indefinite"/>
+    <animate
+      attributeName="cy"
+      values="150;150;250;250"
+      keyTimes="0;0.4;0.6;1"
+      dur="5s"
+      repeatCount="indefinite"/>
+  </circle>
+</svg>
